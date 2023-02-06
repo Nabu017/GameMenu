@@ -23,6 +23,7 @@ public class CallMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
+            Debug.Log("key pressed");
             SceneManager.LoadScene("menu");
         }
     }
