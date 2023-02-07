@@ -21,10 +21,10 @@ public class CallMenu : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("key pressed");
-            SceneManager.LoadScene("menu");
+            optionMenu.SetActive(true);
         }
     }
 }

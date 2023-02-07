@@ -59,6 +59,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSettings
+    methodName: Volume
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -83,23 +86,8 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: MainMenu
-    methodName: QuitGame
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: MainMenu
-    methodName: StartGame
   sceneClasses:
-    Assets/Scenes/Game.unity:
+    Assets/Scenes/2dGame.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -114,24 +102,20 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1546}
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 3172}
     - Class: 114
       Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 4122}
     - Class: 114
       Script: {instanceID: 5214}
     - Class: 114
@@ -140,6 +124,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5916}
     - Class: 114
       Script: {instanceID: 6072}
+    - Class: 114
+      Script: {instanceID: 6416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,6 +141,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -1231,5 +1223,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
-  - Assets/Scenes/Game.unity
+  - Assets/Scenes/2dGame.unity
   playerPath: "C:/Coll\xE8ge Lasalle/Syst\xE8me et m\xE9thodologie 2/GameMenu/Build/GameMenu.exe"
