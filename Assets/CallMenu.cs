@@ -16,15 +16,15 @@ public class CallMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void FixedUpdate()
-    {
-        if(Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("key pressed");
             optionMenu.SetActive(true);
         }
+    }
+
+    private void FixedUpdate()
+    {
+       
     }
 }
